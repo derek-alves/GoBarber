@@ -12,7 +12,11 @@ module.exports = {
         name:{
           type:Sequelize.STRING,
           allowNull:false,
-          unique:true,
+        },
+        email:{
+            type: Sequelize.STRING,
+            allowNull: false,
+            unique: true,
         },
         password_hash:{
           type: Sequelize.STRING,
@@ -23,7 +27,7 @@ module.exports = {
           defaultValue: false,
           allowNull:false,
         },
-        created:{
+        created_at:{
           type: Sequelize.DATE,
           allowNull:false,
         },
